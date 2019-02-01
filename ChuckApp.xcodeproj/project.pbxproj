@@ -14,6 +14,11 @@
 		11BE433B2203F421007B0D51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BE43392203F421007B0D51 /* LaunchScreen.storyboard */; };
 		11BE43462203F421007B0D51 /* ChuckAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE43452203F421007B0D51 /* ChuckAppTests.swift */; };
 		11BE43512203F421007B0D51 /* ChuckAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE43502203F421007B0D51 /* ChuckAppUITests.swift */; };
+		11BE436C2203F480007B0D51 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11BE43632203F480007B0D51 /* Domain.framework */; };
+		11BE43712203F480007B0D51 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE43702203F480007B0D51 /* DomainTests.swift */; };
+		11BE43732203F480007B0D51 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 11BE43652203F480007B0D51 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11BE437A2203F508007B0D51 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11BE43632203F480007B0D51 /* Domain.framework */; };
+		11BE437B2203F508007B0D51 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11BE43632203F480007B0D51 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +36,35 @@
 			remoteGlobalIDString = 11BE432C2203F41F007B0D51;
 			remoteInfo = ChuckApp;
 		};
+		11BE436D2203F480007B0D51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11BE43252203F41F007B0D51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11BE43622203F480007B0D51;
+			remoteInfo = Domain;
+		};
+		11BE437C2203F508007B0D51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11BE43252203F41F007B0D51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11BE43622203F480007B0D51;
+			remoteInfo = Domain;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11BE437E2203F508007B0D51 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				11BE437B2203F508007B0D51 /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		11BE432D2203F41F007B0D51 /* ChuckApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +80,12 @@
 		11BE434C2203F421007B0D51 /* ChuckAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChuckAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BE43502203F421007B0D51 /* ChuckAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckAppUITests.swift; sourceTree = "<group>"; };
 		11BE43522203F421007B0D51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BE43632203F480007B0D51 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11BE43652203F480007B0D51 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		11BE43662203F480007B0D51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BE436B2203F480007B0D51 /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11BE43702203F480007B0D51 /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
+		11BE43722203F480007B0D51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11BE437A2203F508007B0D51 /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +111,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		11BE43602203F480007B0D51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BE43682203F480007B0D51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BE436C2203F480007B0D51 /* Domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +135,8 @@
 				11BE432F2203F41F007B0D51 /* ChuckApp */,
 				11BE43442203F421007B0D51 /* ChuckAppTests */,
 				11BE434F2203F421007B0D51 /* ChuckAppUITests */,
+				11BE43642203F480007B0D51 /* Domain */,
+				11BE436F2203F480007B0D51 /* DomainTests */,
 				11BE432E2203F41F007B0D51 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +147,8 @@
 				11BE432D2203F41F007B0D51 /* ChuckApp.app */,
 				11BE43412203F421007B0D51 /* ChuckAppTests.xctest */,
 				11BE434C2203F421007B0D51 /* ChuckAppUITests.xctest */,
+				11BE43632203F480007B0D51 /* Domain.framework */,
+				11BE436B2203F480007B0D51 /* DomainTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +184,44 @@
 			path = ChuckAppUITests;
 			sourceTree = "<group>";
 		};
+		11BE43642203F480007B0D51 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				11BE437F2203F533007B0D51 /* Entities */,
+				11BE43652203F480007B0D51 /* Domain.h */,
+				11BE43662203F480007B0D51 /* Info.plist */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		11BE436F2203F480007B0D51 /* DomainTests */ = {
+			isa = PBXGroup;
+			children = (
+				11BE43702203F480007B0D51 /* DomainTests.swift */,
+				11BE43722203F480007B0D51 /* Info.plist */,
+			);
+			path = DomainTests;
+			sourceTree = "<group>";
+		};
+		11BE437F2203F533007B0D51 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		11BE435E2203F480007B0D51 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BE43732203F480007B0D51 /* Domain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		11BE432C2203F41F007B0D51 /* ChuckApp */ = {
@@ -135,10 +231,12 @@
 				11BE43292203F41F007B0D51 /* Sources */,
 				11BE432A2203F41F007B0D51 /* Frameworks */,
 				11BE432B2203F41F007B0D51 /* Resources */,
+				11BE437E2203F508007B0D51 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				11BE437D2203F508007B0D51 /* PBXTargetDependency */,
 			);
 			name = ChuckApp;
 			productName = ChuckApp;
@@ -181,6 +279,42 @@
 			productReference = 11BE434C2203F421007B0D51 /* ChuckAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		11BE43622203F480007B0D51 /* Domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11BE43742203F480007B0D51 /* Build configuration list for PBXNativeTarget "Domain" */;
+			buildPhases = (
+				11BE435E2203F480007B0D51 /* Headers */,
+				11BE435F2203F480007B0D51 /* Sources */,
+				11BE43602203F480007B0D51 /* Frameworks */,
+				11BE43612203F480007B0D51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Domain;
+			productName = Domain;
+			productReference = 11BE43632203F480007B0D51 /* Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		11BE436A2203F480007B0D51 /* DomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11BE43772203F480007B0D51 /* Build configuration list for PBXNativeTarget "DomainTests" */;
+			buildPhases = (
+				11BE43672203F480007B0D51 /* Sources */,
+				11BE43682203F480007B0D51 /* Frameworks */,
+				11BE43692203F480007B0D51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11BE436E2203F480007B0D51 /* PBXTargetDependency */,
+			);
+			name = DomainTests;
+			productName = DomainTests;
+			productReference = 11BE436B2203F480007B0D51 /* DomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +336,13 @@
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 11BE432C2203F41F007B0D51;
 					};
+					11BE43622203F480007B0D51 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					11BE436A2203F480007B0D51 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 				};
 			};
 			buildConfigurationList = 11BE43282203F41F007B0D51 /* Build configuration list for PBXProject "ChuckApp" */;
@@ -220,6 +361,8 @@
 				11BE432C2203F41F007B0D51 /* ChuckApp */,
 				11BE43402203F421007B0D51 /* ChuckAppTests */,
 				11BE434B2203F421007B0D51 /* ChuckAppUITests */,
+				11BE43622203F480007B0D51 /* Domain */,
+				11BE436A2203F480007B0D51 /* DomainTests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +386,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		11BE434A2203F421007B0D51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BE43612203F480007B0D51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BE43692203F480007B0D51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,6 +434,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		11BE435F2203F480007B0D51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BE43672203F480007B0D51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BE43712203F480007B0D51 /* DomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +461,16 @@
 			isa = PBXTargetDependency;
 			target = 11BE432C2203F41F007B0D51 /* ChuckApp */;
 			targetProxy = 11BE434D2203F421007B0D51 /* PBXContainerItemProxy */;
+		};
+		11BE436E2203F480007B0D51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11BE43622203F480007B0D51 /* Domain */;
+			targetProxy = 11BE436D2203F480007B0D51 /* PBXContainerItemProxy */;
+		};
+		11BE437D2203F508007B0D51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11BE43622203F480007B0D51 /* Domain */;
+			targetProxy = 11BE437C2203F508007B0D51 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -442,7 +624,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.ChuckApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -460,7 +642,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.ChuckApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -546,6 +728,101 @@
 			};
 			name = Release;
 		};
+		11BE43752203F480007B0D51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 777VCGBAGX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		11BE43762203F480007B0D51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 777VCGBAGX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		11BE43782203F480007B0D51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 777VCGBAGX;
+				INFOPLIST_FILE = DomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.DomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11BE43792203F480007B0D51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 777VCGBAGX;
+				INFOPLIST_FILE = DomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.DomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,6 +858,24 @@
 			buildConfigurations = (
 				11BE435C2203F421007B0D51 /* Debug */,
 				11BE435D2203F421007B0D51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11BE43742203F480007B0D51 /* Build configuration list for PBXNativeTarget "Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11BE43752203F480007B0D51 /* Debug */,
+				11BE43762203F480007B0D51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11BE43772203F480007B0D51 /* Build configuration list for PBXNativeTarget "DomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11BE43782203F480007B0D51 /* Debug */,
+				11BE43792203F480007B0D51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
